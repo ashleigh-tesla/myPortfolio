@@ -87,11 +87,11 @@
 .home {
     display: flex;
     background: url('/photos/IMG_20210227_142457.jpg') no-repeat center center;
-    /* background-size: contain; */
-    /* background-size: 100%; */
-    /* background-size: auto; */
-    /* background-size: cover; */
-    /* background-size: 100% 100%; */
+    /* background-size      : contain; */
+    /* background-size      : 100%; */
+    /* background-size      : auto; */
+    background-size: cover;
+    /* background-size      : 100% 100%; */
     /* background-position-x: center; */
     /* background-position-y: center; */
     height: 100vh;
