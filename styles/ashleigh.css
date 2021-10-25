@@ -305,10 +305,15 @@ section {
         max-width: 800px
     }
     .about .about-content .column {
-        width: 50%;
+        width: 100%;
     }
     .about .about-content .left {
-        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right {
+        flex: 100%;
     }
 }
 
