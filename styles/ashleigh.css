@@ -60,6 +60,7 @@ html {
 }
 
 .navbar .menu li a {
+    display: block;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -525,9 +526,9 @@ section .title::after {
     height: 13px;
     width: 13px;
     margin: 0 5px;
-    outline: none!important;
+    outline: none !important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid crimson !important;
     transition: all 0.3s ease;
 }
 
@@ -538,7 +539,7 @@ section .title::after {
 
 .owl-dot.active,
 .owl-dot:hover {
-    background: crimson!important;
+    background: crimson !important;
 }
 
 
