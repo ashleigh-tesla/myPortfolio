@@ -30,15 +30,32 @@
     />
 </head>
 <style>
-    .home {
-        background: url('photos/IMG_20210227_142457.jpg') no-repeat center center;
-        /* background-size: contain; */
-        /* background-size: 100%; */
-        /* background-size: auto; */
-        background-size: cover;
-        /* background-size: 100% 100%; */
-        /* background-position-x: center; */
-        /* background-position-y: center; */
+    /* responsive media query start */
+    
+    @media (max-width: 620px) {
+        .home {
+            background: url('photos/IMG_20211028_125408.jpg') no-repeat center center;
+            /* background-size: contain; */
+            /* background-size: 100%; */
+            /* background-size: auto; */
+            background-size: cover;
+            /* background-size: 100% 100%; */
+            /* background-position-x: center; */
+            /* background-position-y: center; */
+        }
+    }
+    
+    @media(min-width:620px) {
+        .home {
+            background: url('photos/IMG_20211028_125414.jpg') no-repeat center center;
+            /* background-size: contain; */
+            /* background-size: 100%; */
+            /* background-size: auto; */
+            background-size: cover;
+            /* background-size: 100% 100%; */
+            /* background-position-x: center; */
+            /* background-position-y: center; */
+        }
     }
 </style>
 
@@ -71,7 +88,7 @@
                 <div class="text-1">Hello, My Name Is</div>
                 <div class="text-2">Ashleigh Tanaka Manyanye</div>
                 <div class="text-3">And I'm A <span class="typing-1"></span></div>
-                <a href="">Hire Me</a>
+                <a href="#contact">Hire Me</a>
             </div>
         </div>
     </section>
@@ -82,13 +99,18 @@
             <h2 class="title">About Me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="photos/TanakaTesla.jpg" alt="Myself">
+                    <img src="photos/IMG_20211028_125005.jpg" alt="Myself">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm a <span>Frontend Developer</span> and I'm a <span class="typing-2"></span>
+                    <div class="text" style="padding: 20 0px;">I'm a <span>Frontend Developer ( Designer )</span> and I'm a <span class="typing-2"></span>
                     </div>
-                    <p>Hi There</p>
-                    <a href="#">Download CV</a>
+                    <p>Hi There Folks</p>
+                    <p>By learning computer science for the first time in school, I fell in love with developing computer programs. I love to develop programs that run electrical circuits and components. I'm also interested in developing mobile applications
+                        and software that are controlled by Artificial Intelligence and free full automation of robots. Developing software really puts me in the seventh <b>"7th"</b> heaven on the ninth
+                        <strong>"9th"</strong> cloud. </p>
+                    <a href="https://ashleigh-tesla.github.io/resume/" target="_blank">View Resume</a>
+                    <br>
+                    <a href="stuff/Ashleigh Tanaka Manyanye Resume.pdf" target="_blank">Download CV</a>
                 </div>
             </div>
         </div>
@@ -102,21 +124,21 @@
                     <div class="box">
                         <i class="fas fa-paint-brush"></i>
                         <div class="text">Web Design</div>
-                        <p>Design Website</p>
+                        <p>Design Websites</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-chart-line"></i>
-                        <div class="text">Advertising</div>
-                        <p>Design Website</p>
+                        <div class="text">Apps Deployment</div>
+                        <p>Design & Development</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-code"></i>
-                        <div class="text">Apps Design</div>
-                        <p>Design Website</p>
+                        <div class="text">Web Development</div>
+                        <p>Develop Websites</p>
                     </div>
                 </div>
             </div>
@@ -204,139 +226,179 @@
         <div class="max-width">
             <h2 class="title">My Projects</h2>
             <div class="projects-content">
-                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="10" aria-label="Slide 11"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-12 col-md-9">
+                            <div id="carouselExampleDark" class="carousel carousel-light carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="3000">
+                                        <div class="text-center img-fill image">
+                                            <img src="photos/Web capture_1-11-2021_12138_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid image__img" alt="Analogue Clock">
+                                        </div>
+                                        <div class="image__overlay">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5 class="image__title" style="text-transform:uppercase; color:crimson; font-weight:700;">
+                                                    Analogue Clock</h5>
+                                                <p><a href="https://ashleigh-tesla.github.io/firstClock/" target="_blank" class="btn btn-outline-info image__description">Browse</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <div class="text-center img-fill image">
+                                            <img src="photos/Web capture_1-11-2021_12334_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid image__img" alt="Architect Aaron">
+                                        </div>
+                                        <div class="image__overlay">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5 class="text-white image__title" style="text-transform:uppercase; color:crimson; font-weight:700;">
+                                                    Architect Aaron</h5>
+                                                <p><a href="https://ashleigh-tesla.github.io/aaron/" target="_blank" class="btn btn-outline-info image__description">View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <div class="text-center img-fill image">
+                                            <img src="photos/Web capture_1-11-2021_12441_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid image__img" alt="Basic Addition, Subtraction, Division And Multiplication Calculator">
+                                        </div>
+                                        <div class="image__overlay">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5 class="image__title" style="text-transform:uppercase; color:crimson; font-weight:700;">
+                                                    Family Calculator</h5>
+                                                <p><a href="https://ashleigh-tesla.github.io/Calculator/" target="_blank" class="btn btn-outline-info image__description">Browse</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <div class="text-center img-fill image">
+                                            <img src="photos/Web capture_1-11-2021_13247_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid image__img" alt="Universiteit Stellenbosch">
+                                        </div>
+                                        <div class="image__overlay">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5 class="text-white image__title" style="text-transform:uppercase; color:crimson; font-weight:700;">
+                                                    Stellenbosch University</h5>
+                                                <p><a href="https://ashleigh-tesla.github.io/imageHoverTextOverlayEffect/" target="_blank" class="btn btn-outline-info image__description">View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <div class="text-center img-fill image">
+                                            <img src="photos/Web capture_1-11-2021_121158_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid image__img" alt="My Website">
+                                        </div>
+                                        <div class="image__overlay">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5 class="image__title" style="text-transform:uppercase; color:crimson; font-weight:700;">My Website
+                                                </h5>
+                                                <p><a href="https://ashleigh-tesla.github.io/DesignWeb/" target="_blank" class="btn btn-outline-info image__description">Browse</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <div class="text-center img-fill image">
+                                            <img src="photos/Web capture_1-11-2021_121713_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid image__img" alt="To Do List App">
+                                        </div>
+                                        <div class="image__overlay">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5 class="text-white image__title" style="text-transform:uppercase; color:crimson; font-weight:700;">To Do App</h5>
+                                                <p><a href="https://ashleigh-tesla.github.io/ToDoApp/" target="_blank" class="btn btn-outline-info image__description">View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <div class="text-center img-fill image">
+                                            <img src="photos/Web capture_1-11-2021_122152_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid image__img" alt="To Do List App">
+                                        </div>
+                                        <div class="image__overlay">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5 class="image__title" style="text-transform:uppercase; color:crimson; font-weight:700;">To Do App { V U E }</h5>
+                                                <p><a href="https://ashleigh-tesla.github.io/ToDoAppVue/" target="_blank" class="btn btn-outline-info image__description">Browse</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <div class="text-center img-fill image">
+                                            <img src="photos/Web capture_1-11-2021_122531_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid image__img" alt="Image Hover Overlay Text Effect">
+                                        </div>
+                                        <div class="image__overlay">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5 class="text-white image__title" style="text-transform:uppercase; color:crimson; font-weight:700;">
+                                                    Image Hover Overlay Text Effect</h5>
+                                                <p><a href="https://ashleigh-tesla.github.io/imageHoverOverlayTextEffect/" target="_blank" class="btn btn-outline-info image__description">View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <div class="text-center img-fill image">
+                                            <img src="photos/Web capture_1-11-2021_122744_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid image__img" alt="Custom Scrollbar">
+                                        </div>
+                                        <div class="image__overlay">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5 class="image__title" style="text-transform:uppercase; color:crimson; font-weight:700;">
+                                                    Custom Scrollbar</h5>
+                                                <p><a href="https://ashleigh-tesla.github.io/CustomScrollBar/" target="_blank" class="btn btn-outline-info image__description">Browse</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <div class="text-center img-fill image">
+                                            <img src="photos/Web capture_1-11-2021_122840_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid image__img" alt="Fold Effect">
+                                        </div>
+                                        <div class="image__overlay">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5 class="text-white image__title" style="text-transform:uppercase; color:crimson; font-weight:700;">
+                                                    Fold Effect</h5>
+                                                <p><a href="https://ashleigh-tesla.github.io/foldEffect/" target="_blank" class="btn btn-outline-info image__description">View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <div class="text-center img-fill image">
+                                            <img src="photos/Web capture_1-11-2021_123050_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid image__img" alt="Quiz App">
+                                        </div>
+                                        <div class="image__overlay">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5 class="image__title" style="text-transform:uppercase; color:crimson; font-weight:700;">
+                                                    Quiz App</h5>
+                                                <p><a href="https://ashleigh-tesla.github.io/QuizApp/" target="_blank" class="btn btn-outline-info image__description">Browse</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="text-center img-fill image">
+                                            <img src="photos/Web capture_1-11-2021_124235_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid image__img" alt="My Resume">
+                                        </div>
+                                        <div class="image__overlay">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5 class="text-white image__title" style="text-transform:uppercase; color:crimson; font-weight:700;">My Resume
+                                                </h5>
+                                                <p><a href="https://ashleigh-tesla.github.io/resume/" target="_blank" class="btn btn-outline-info image__description">View</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="3000">
-                            <div class="text-center img-fill">
-                                <img src="photos/Web capture_1-11-2021_12138_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid" alt="...">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-white">Analogue Clock</h5>
-                                <p><a href="https://ashleigh-tesla.github.io/firstClock/" target="_blank" class="btn btn-outline-info">Browse</a></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <div class="text-center img-fill">
-                                <img src="photos/Web capture_1-11-2021_12334_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid" alt="...">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-white">Architect Aaron</h5>
-                                <p><a href="https://ashleigh-tesla.github.io/aaron/" target="_blank" class="btn btn-outline-info">View</a></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <div class="text-center img-fill">
-                                <img src="photos/Web capture_1-11-2021_12441_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid" alt="...">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-white">Family Calculator</h5>
-                                <p><a href="https://ashleigh-tesla.github.io/Calculator/" target="_blank" class="btn btn-outline-info">Browse</a></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <div class="text-center img-fill">
-                                <img src="photos/Web capture_1-11-2021_13247_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid" alt="...">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-white">Stellenbosch University</h5>
-                                <p><a href="https://ashleigh-tesla.github.io//" target="_blank" class="btn btn-outline-info">View</a></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <div class="text-center img-fill">
-                                <img src="photos/Web capture_1-11-2021_121158_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid" alt="...">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-white">My Website</h5>
-                                <p><a href="https://ashleigh-tesla.github.io/DesignWeb/" target="_blank" class="btn btn-outline-info">Browse</a></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <div class="text-center img-fill">
-                                <img src="photos/Web capture_1-11-2021_121713_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid" alt="...">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-white">To Do App</h5>
-                                <p><a href="https://ashleigh-tesla.github.io/ToDoApp/" target="_blank" class="btn btn-outline-info">View</a></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <div class="text-center img-fill">
-                                <img src="photos/Web capture_1-11-2021_122152_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid" alt="...">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-white">To Do App { V U E }</h5>
-                                <p><a href="https://ashleigh-tesla.github.io/ToDoAppVue/" target="_blank" class="btn btn-outline-info">Browse</a></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <div class="text-center img-fill">
-                                <img src="photos/Web capture_1-11-2021_122531_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid" alt="...">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-white">Eighth slide label</h5>
-                                <p><a href="https://ashleigh-tesla.github.io//" target="_blank" class="btn btn-outline-info">View</a></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <div class="text-center img-fill">
-                                <img src="photos/Web capture_1-11-2021_122744_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid" alt="...">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-white">Custom Scrollbar</h5>
-                                <p><a href="https://ashleigh-tesla.github.io/customScrollBar/" target="_blank" class="btn btn-outline-info">Browse</a></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <div class="text-center img-fill">
-                                <img src="photos/Web capture_1-11-2021_122840_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid" alt="...">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-white">Fold Effect</h5>
-                                <p><a href="https://ashleigh-tesla.github.io/foldEffect/" target="_blank" class="btn btn-outline-info">View</a></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <div class="text-center img-fill">
-                                <img src="photos/Web capture_1-11-2021_123050_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid" alt="...">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-white">Quiz App</h5>
-                                <p><a href="https://ashleigh-tesla.github.io/QuizApp/" target="_blank" class="btn btn-outline-info">Browse</a></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="text-center img-fill">
-                                <img src="photos/Web capture_1-11-2021_124235_ashleigh-tesla.github.io.jpeg" class="rounded mx-auto d-block w-100 w-md-75 img-fluid" alt="...">
-                            </div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="text-white">My Resume</h5>
-                                <p><a href="https://ashleigh-tesla.github.io/resume/" target="_blank" class="btn btn-outline-info">View</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
         </div>
@@ -348,37 +410,37 @@
             <div class="carosel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <img src="photos/TanakaTesla.jpg" alt="Tanaka">
-                        <div class="text">Tanaka</div>
-                        <p>Tanaka</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="photos/IMG_20210227_142456.jpg" alt="Ashleigh">
-                        <div class="text">Ashleigh</div>
-                        <p>Ashleigh</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="photos/NikolaTesla.jpg" alt="Tesla">
-                        <div class="text">Tesla</div>
-                        <p>Tesla</p>
+                        <img src="photos/IMG_20211029_153953.jpg" alt="Takudzwa & Tanaka">
+                        <div class="text">Takudzwa</div>
+                        <p>Electrical Engineer</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="photos/IMG_20210129_1710431.jpg" alt="Aaron">
-                        <div class="text">Aaron</div>
-                        <p>Aaron</p>
+                        <div class="text">Architect Aaron</div>
+                        <p>Mechanical Engineer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="photos/IMG_20211029_153757.jpg" alt="Lovejoy & Ashleigh">
+                        <div class="text">Lovejoy</div>
+                        <p>Electrical Engineer</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <img src="photos/IMG-20210919-WA0043-1.jpg" alt="Tinotenda">
                         <div class="text">Tinotenda</div>
-                        <p>Tinotenda</p>
+                        <p>Attorney</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="photos/IMG_20211029_154702.jpg" alt="Tanaka">
+                        <div class="text">Tanaka</div>
+                        <p>Web Developer</p>
                     </div>
                 </div>
             </div>
@@ -392,27 +454,53 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nobis odio quam eos, doloribus ipsa consequatur blanditiis neque sed numquam!</p>
+                    <p style="font-weight: 300; font-style:italic; font-family: cursive;">"Eenvoud is die siel van doeltreffendheid." – Austin Freeman</p>
                     <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
+                        <div class="row" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%">
+                            <a href="https://ashleigh-tesla.github.io/DesignWeb/" target="_blank"><i class="fas fa-user"
+                                    style="width: 5%;"></i></a>
+                            <div class="info" style="width: 85%;">
                                 <div class="head">Name</div>
                                 <div class="sub-title">Ashleigh Tanaka Manyanye</div>
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <a href="https://goo.gl/maps/X2mvFvHWCiMnKgRk6" target="_blank"><i
+                                    class="fas fa-map-marker-alt"></i></a>
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0073490720024!2d18.93411581492417!3d-33.91521042889993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcdb21c00000001%3A0x6ab854626468e84f!2sZorgvliet%20Wine%20Estate!5e0!3m2!1sen!2sza!4v1635845145027!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
                             <div class="info">
                                 <div class="head">Address</div>
-                                <div class="sub-title">Ashleigh Tanaka Manyanye</div>
+                                <div class="sub-title">Helshoogte Rd, Stellenbosch Central, Stellenbosch, 7600</div>
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:ashleightesla@gmail.com"><i class="fas fa-envelope"></i></a>
                             <div class="info">
                                 <div class="head">Email</div>
                                 <div class="sub-title">ashleightesla@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="tel:+27631451765"><i class="fas fa-phone-alt"></i></a>
+                            <div class="info">
+                                <div class="head">Cell</div>
+                                <div class="sub-title">+27 631 451 765</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="https://www.linkedin.com/in/ashleigh-manyanye-060222215" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <div class="info">
+                                <div class="head">LinkedIn</div>
+                                <div class="sub-title">linkedin.com/in/ashleigh-manyanye-060222215</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="https://ashleigh-tesla.github.io/DesignWeb/" target="_blank"><i
+                                    class="fab fa-internet-explorer"></i></a>
+                            <div class="info">
+                                <div class="head">Website</div>
+                                <div class="sub-title">https://ashleigh-tesla.github.io/DesignWeb/</div>
                             </div>
                         </div>
                     </div>
@@ -445,7 +533,8 @@
 
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="#">CodingNepal</a> | <span class="far fa-copyright"></span> 2021 All Rights Reserved
+        <span>Created By <a href="https://ashleigh-tesla.github.io/DesignWeb/" target="_blank">Ashleigh Tanaka
+                Manyanye</a> | <span class="far fa-copyright"></span> 2021 All Rights Reserved
         </span>
     </footer>
     <p></p>

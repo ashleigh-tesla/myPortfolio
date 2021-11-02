@@ -476,7 +476,6 @@ section .title::after {
 }
 
 .projects .img-fill {
-    /* position: relative; */
     width: 100%;
     max-height: 60vh;
     display: flex;
@@ -487,17 +486,63 @@ section .title::after {
     text-transform: capitalize, uppercase;
 }
 
+.text-white {
+    color: crimson;
+}
 
-/* .img-fill img {
-    text-align: center;
+
+/* carouselExampleDark animation */
+
+.image {
+    position: relative;
+    width: 400px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: 75%;
-    height: auto;
-} */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay>* {
+    transform: translateY(30px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1.0;
+}
+
+.image__overlay:hover>* {
+    transform: translateY(0);
+}
+
+.image_title {
+    color: crimson;
+    font-size: 2.0em;
+    font-weight: 700;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
 
 
 /* teams section styling */
@@ -623,15 +668,20 @@ section .title::after {
 
 .contact .contact-content .row {
     display: flex;
+    flex-direction: row;
     height: 65px;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .contact .contact-content .row .info {
-    margin-left: 30px;
+    margin-left: 20px;
+    width: 85%;
 }
 
-.contact .contact-content .row i {
+.contact .contact-content .row a {
+    width: 5%;
     font-size: 25px;
     color: crimson;
 }
@@ -715,6 +765,14 @@ footer {
     font-family: 'Poppins', sans-serif;
     background: #111;
     padding: 20px 23px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer span {
+    color: lightcyan;
 }
 
 footer span a {
