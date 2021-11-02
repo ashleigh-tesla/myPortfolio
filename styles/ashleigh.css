@@ -668,15 +668,20 @@ section .title::after {
 
 .contact .contact-content .row {
     display: flex;
+    flex-direction: row;
     height: 65px;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .contact .contact-content .row .info {
-    margin-left: 30px;
+    margin-left: 20px;
+    width: 85%;
 }
 
 .contact .contact-content .row i {
+    width: 5%;
     font-size: 25px;
     color: crimson;
 }
