@@ -680,7 +680,7 @@ section .title::after {
     width: 85%;
 }
 
-.contact .contact-content .row i {
+.contact .contact-content .row a {
     width: 5%;
     font-size: 25px;
     color: crimson;
