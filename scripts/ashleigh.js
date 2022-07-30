@@ -1,3 +1,6 @@
+const date = document.getElementById("date")
+date.innerHTML = new Date().getFullYear()
+
 $(document).ready(function() {
     $(window).scroll(function() {
         if (this.scrollY > 20) {
