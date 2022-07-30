@@ -34,7 +34,7 @@ $(document).ready(function() {
         loop: true
     })
     var typed = new Typed(".typing-2", {
-        strings: ["YouTuber", "Developer", "UI/UX Designer", "Designer", "Freelancer"],
+        strings: ["YouTuber", "UI Developer", "UX Designer", "Designer", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
