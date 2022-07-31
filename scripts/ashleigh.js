@@ -60,3 +60,76 @@ $(document).ready(function() {
         }
     })
 })
+
+
+
+
+
+// Smooth Scrolling With Vanilla JavaScript
+
+// const links = document.querySelectorAll(".navbr .max-width ul a");
+
+// Using the scroll() Method
+
+// for (const link of links) {
+//     link.addEventListener("click", clickHandler);
+// }
+
+// function clickHandler(e) {
+//     e.preventDefault();
+//     const href = this.getAttribute("href");
+//     const offsetTop = document.querySelector(href).offsetTop;
+
+//     scroll({
+//         top: offsetTop,
+//         behavior: "smooth"
+//     });
+// }
+
+// Using the scrollIntoView() Method
+
+// for (const link of links) {
+//     link.addEventListener("click", clickHandler);
+// }
+
+// function clickHandler(e) {
+//     e.preventDefault();
+//     const href = this.getAttribute("href");
+
+//     document.querySelector(href).scrollIntoView({
+//         behavior: "smooth"
+//     });
+// }
+
+// Smooth Scrolling With jQuery
+
+// $(".navbr .max-width ul a").on("click", function(e) {
+//     e.preventDefault();
+//     const href = $(this).attr("href");
+//     $("html, body").animate({ scrollTop: $(href).offset().top }, 800);
+// });
+
+// $(document).ready(function() {
+//     // Add smooth scrolling to all links
+//     $(".navbr .max-width ul a").on('click', function(event) {
+
+//         // Make sure this.hash has a value before overriding default behavior
+//         if (this.hash !== "") {
+//             // Prevent default anchor click behavior
+//             event.preventDefault();
+
+//             // Store hash
+//             var hash = this.hash;
+
+//             // Using jQuery's animate() method to add smooth page scroll
+//             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+//             $('html, body').animate({
+//                 scrollTop: $(hash).offset().top
+//             }, 800, function() {
+
+//                 // Add hash (#) to URL when done scrolling (default click behavior)
+//                 window.location.hash = hash;
+//             });
+//         } // End if
+//     });
+// });
