@@ -1077,6 +1077,14 @@ footer span a:hover {
     /* .projects .projects-content .card-grid .card {
         width: 100%;
     } */
+    .about .title::before,
+    .services .title::before,
+    .skills .title::before,
+    .projects .title::before,
+    .teams .title::before,
+    .contact .title::before {
+        background: none;
+    }
     .about .title::after,
     .services .title::after,
     .skills .title::after,
